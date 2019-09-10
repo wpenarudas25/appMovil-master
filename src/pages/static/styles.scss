@@ -1,0 +1,25 @@
+
+h1,h2,h3,h4,h5,h6,p,a,.btn{
+	font-family: 'Arial';
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+
+input{
+	border:0 !important;
+	border-bottom: 1px solid #0033A0!important;
+}
+
+.boton{
+	background-color: #0033A0;
+	border: 0;
+	padding:10px;
+	color: white;
+	font-size: 15px;
+	float: none;
+	text-align: center;
+	display: block;
+	margin-top: 60px;
+	font-weight: bold;
+}

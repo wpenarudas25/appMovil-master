@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis citas</title>
+</head>
+
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="../static/styles.css">
+<link rel="stylesheet" type="text/css" href="./list.css"> -->
+<body>
+
+<ion-content>
+          <div class="titulo">
+          <h3  class="">Mis citas</h3>
+        </div>
+
+        <div class="cuerpo">
+          <button class="boton" (click)="openNewCite()">  <ion-icon name="add-circle"><span style="font-family: arial;">
+Solicitar nueva cita</span></ion-icon></button>
+        
+          <ion-list *ngIf="cites"> 
+            <ion-item class="citas" *ngFor="let c of cites" >
+              <div class="cita col-11">
+                <p style="color: #00aec7; font-size: 16px;"> {{c.type}} </p>
+                <p style="color: gray"> {{c.date}} </p>
+                <p style="color: black;font-size: 16px;"> {{c.medic.name}} </p>
+                <button ion-button color="danger" (click)="deleteCite(c)" ><ion-icon name="trash"></ion-icon></button>
+               </div>
+            </ion-item>
+           </ion-list>
+      </div>
+</ion-content>
+
+
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lista de Citas</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-list>
+    <ion-item *ngFor="let c of cites" >
+      <p> {{c.type}} </p>
+      <p> {{c.medic}} </p>
+      <p> {{c.date}} </p>
+      <button ion-button color="danger" (click)="deleteCite(c)" ><ion-icon name="trash"></ion-icon></button> 
+    </ion-item>
+  </ion-list>
+ -->
+
+
+<!--
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+ </div>
+<button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  -->

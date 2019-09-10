@@ -1,0 +1,55 @@
+ <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<!-- <link rel="stylesheet" type="text/css" href="../static/styles.css">
+<link rel="stylesheet" type="text/css" href="./home.css"> -->
+
+<body>
+  <ion-content>
+
+
+      <div class=" bienvenida">
+        <div class="row">
+          <h1 style="color:#0033A0; font-size: 25px; margin: auto auto auto 20px;"> Bienvenido</h1>
+          <button class="boton-welcome" (click)="logOut()">Cerrar Sesión</button> 
+         </div>
+          <p style="color: #0033A0; margin-left: 7px;font-size: 16px">{{name}}</p>
+      </div>
+
+       <div class="row  opciones">
+        <div class="opcion">
+          <p style="color: gray !important;font-size: 16px">solicitar nueva cita</p>
+          <button (click)="openNewCite()"> Solicitar</button>
+        </div>
+        <div class="opcion">
+          <p style="color: gray !important;font-size: 16px">Ver todas mis citas</p>
+          <button (click)="openCites()">Ver</button>
+        </div>
+      </div>
+
+      <div class="body">
+        <h5 class="frase">Tu felicidad es reflejo de tu salud</h5>
+        <img src="https://www.unac.edu.co/wp-content/uploads/2018/11/felicidad.jpg" style="width: 100%" alt="">
+      </div>
+
+
+  </ion-content>
+
+  <!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Bienvenido {{name}}</ion-title>
+    
+    <button ion-button (click)="logOut()" >
+      Cerrar Cesion 
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+  
+  <button ion-button secondary (click)="openNewCite()" >
+    Solicitar cita
+  </button>
+
+   <button ion-button primary (click)="openCites()" >
+      Ver Citas
+    </button>
+ -->

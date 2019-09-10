@@ -1,0 +1,23 @@
+<body>
+<ion-content>
+
+<div>
+  <div class="form-titleCita">
+      <h2 class="card-title">¡Cita solicitada <br> satisfactoriamente!</h5>
+      <p class="card-subtitle mb-2">información de la cita</p>
+  </div>
+  <div class="bodyConfirm">
+  	<p style="font-weight: bold;color: gray">Fecha de la cita</p>
+  	<p style="color: gray"> {{c.date}} </p>
+  	<p style="font-weight: bold;color: gray; font-size: 16px;"> Tipo de cita </p>
+	<p style="color: gray;font-size: 16px;"> {{c.type}}</p>
+  	<p style="font-weight: bold;color: gray">Médico que te atenderá</p>
+	<p style="color: gray;font-size: 16px;"> {{c.medic.name}} </p>
+  </div>
+   <button ion-button class="boton col-md-12 col-12" ion-icon="add-circle" style="padding:25px 24px" (click)="deleteCite(c)">Cancelar la Cita
+   </button>
+   
+</div>
+</ion-content>
+</body>
+</html>

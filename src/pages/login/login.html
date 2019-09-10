@@ -1,0 +1,43 @@
+<!-- 
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<!-- <link rel="stylesheet" type="text/css" href="../static/styles.css">
+<link rel="stylesheet" type="text/css" href="../src/pages/login/login.scss"> -->
+
+           
+
+   <ion-content>
+       <div class="titleLogin">
+          <h3>su salud</h3>
+        </div>
+        <div class="form-title">
+          <h5 class="card-title">Iniciar sesión</h5>
+          <p class="card-subtitle mb-2">Ingrese sus datos</p>
+        </div>
+
+              <form>
+                <div class="form-group" padding>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email"  [(ngModel)]="email" required="true">
+                </div>
+  
+                <div class="form-group" padding>
+                  <input type="password" class="form-control" placeholder="Contraseña" name="pass" [(ngModel)]="pass" required="true">
+                </div>
+                <div padding>
+                  <button class="botonIngresar" (click)="logIn()">Ingresar</button>
+                </div>
+              </form>
+    </ion-content>
+
+
+  <!-- <form>
+      <input type="text" name="email" [(ngModel)]="email" >
+      <input type="password" name="pass" [(ngModel)]="pass">
+      <button  ion-button color="dark" (click)="logIn()" >ingresar</button>
+     </form>  -->

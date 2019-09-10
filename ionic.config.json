@@ -1,0 +1,7 @@
+{
+  "name": "susalud",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="titulo">
+      <span>Perfil</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Informacion personal</ion-list-header>
+    <ion-item>
+      <ion-icon name="person" item-start ></ion-icon>
+        <p>Nombre: {{user.name}} {{user.lastName}}</p>
+    </ion-item>
+    <ion-item>
+    <ion-icon name="call" item-start ></ion-icon>
+    <p> {{user.phone}} </p>
+    </ion-item>  
+    <ion-item>
+      <ion-icon name="mail" item-start ></ion-icon>
+      <p> {{user.email}} </p>
+    </ion-item>
+  </ion-list>
+</ion-content>
